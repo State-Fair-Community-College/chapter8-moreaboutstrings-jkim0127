@@ -19,7 +19,17 @@
 # 4. Use a for loop to print each character in the
 #    string on its own line
 # 5. Print the total length of the string using len()
+
+message = 'Hello, World!'
+print(message[0])
+print(message[-1])
+for i in message:
+    print(i)
+
+print(len(message))
+
 print()  # blank line
+
 
 # ------------------------------------------------
 # Practice 2: String Slicing and Concatenation
@@ -33,6 +43,18 @@ print()  # blank line
 # 4. Create two separate string variables: first and last
 #    then concatenate them with a comma and space in between
 #    and print the result  (e.g. 'Smith, Jane')
+
+full_name = 'Jisoo Kim'
+print(full_name[0:4])
+print(full_name[5:])
+first = 'Jisoo'
+last = 'Kim'
+result = last + ', ' + first
+print(result) 
+
+
+
+
 print()
 
 # ------------------------------------------------
@@ -48,6 +70,16 @@ print()
 #    and print the result
 # 5. Use isupper() to check if it is all uppercase
 #    and print the result
+
+user_input = input('Enter a string: ') 
+
+print(user_input.isalpha())
+print(user_input.isdigit())
+print(user_input.islower())
+print(user_input.isupper())
+print()
+
+
 print()
 
 # ------------------------------------------------
@@ -66,6 +98,13 @@ print()
 #    with 'The' and print the result
 # 7. Use endswith() to check if the sentence ends
 #    with 'dog' and print the result
+
+print(sentence.lower())
+print(sentence.upper())
+print(sentence.replace('fox', 'cat'))
+print(sentence.find('jump'))
+print(sentence.startswith('The')
+print(sentence.endswith('dog'))
 print()
 
 # ------------------------------------------------
@@ -82,13 +121,13 @@ print()
 # Fix them so the program works correctly.
 
 full_name = 'marie curie'
-name_parts = full_name.Split()
+name_parts = full_name.split()
 
 print(full_name.upper())
 
-if full_name.replace(' ', '').isAlpha():
+if full_name.replace(' ', '').isalpha():
     print('Contains only letters')
 
 for part in name_parts:
-    print(part.Capitalize())
+    print(part.capitalize())
 print()
